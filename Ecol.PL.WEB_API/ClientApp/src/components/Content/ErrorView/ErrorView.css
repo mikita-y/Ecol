@@ -1,0 +1,18 @@
+.errorView {
+    position: fixed;
+    z-index: 17;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    color: lightcoral;
+    min-width: 30vw;
+    max-height: 60vh;
+    text-align: center;
+    padding: 1vh 1vw;
+}
+
+.errorView button {
+    width: 40%;
+    max-width: 30vw;
+    margin: 1% auto;
+}

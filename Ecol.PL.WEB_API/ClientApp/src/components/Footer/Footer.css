@@ -1,0 +1,43 @@
+/*#pageFooter {
+    grid-area: footer;
+    padding: 0px;
+    background: Ivory;
+    text-align: center;
+    border-top: solid DarkOrchid 1px;
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > img {
+    display: flex;
+    min-width: 10px;
+    min-height: 10px;
+    padding: 3px;
+    height: 3.5vh;
+    width: 3.5vh;
+}
+
+#pageFooter  p {
+    margin: 0.5vh 0vw;
+    font-size: 2.5vh;
+}
+
+@media all and (max-width: 800px) {
+    #pageFooter {
+        min-height: 65px;
+        font-size: 30px;
+    }
+
+    #pageFooter  p {
+        font-size: 15px;
+    }
+    
+}*/

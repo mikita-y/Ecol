@@ -1,0 +1,16 @@
+.pageContent {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 1vh 20vw;
+}
+
+.pageContent > :first-child {
+    width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    .pageContent {
+        padding: 1vh 1vw;
+    }
+}

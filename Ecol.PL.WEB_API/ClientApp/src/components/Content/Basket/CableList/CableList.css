@@ -1,0 +1,16 @@
+.cableList {
+    width: 90%;
+    margin: auto;
+}
+
+.cableList td, .cableList th {
+    padding: 3px; 
+    border: solid black;
+    border-width: 1px 0px;
+    font-size: 2vw;
+}
+
+.cableList input[type=text]{
+    width: 100%;
+}
+

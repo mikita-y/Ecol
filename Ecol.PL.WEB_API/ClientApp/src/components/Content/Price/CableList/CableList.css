@@ -1,0 +1,10 @@
+.cableList {
+    width: 90%;
+    margin: auto;
+}
+
+.cableList td, .priceList th {
+    padding: 3px; 
+    border: solid black;
+    border-width: 1px 0px;
+}

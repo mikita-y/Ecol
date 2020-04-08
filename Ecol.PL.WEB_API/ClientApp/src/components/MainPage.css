@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+
+#mainPage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0px;
+    font-family: "Century Gothic" Cursive;
+}
+
+#pageFooter {
+    padding: 0px;
+    text-align: center;
+    border-top: solid black 1px;
+    height: 5vh;
+}
+.pageContent {
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+}
+
+/*general*/
+
+h1, h2, h3, h4, h5, h6, p, label,span {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li{
+    padding: 4px;
+}
+
+select {
+    /*color: DarkOrchid;*/
+    font-size: 2.5vh;
+    margin: 0 1vh;
+}
+
+time {
+    white-space: nowrap;
+}
+
+
+
+.standart-form {
+    border: 1px solid gray;
+    padding: 2vw;
+    border-radius: 10px;
+    text-align: left;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.standart-form .form-group{
+    width: 50%;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}

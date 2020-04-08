@@ -1,0 +1,15 @@
+.production {
+ text-align: starts;
+}
+
+.production table {
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+.production td, .priceList th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border-bottom: 1px solid black; /* Параметры рамки */
+    padding-right: 10px;
+}
+

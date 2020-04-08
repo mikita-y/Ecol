@@ -1,0 +1,22 @@
+header {
+    height: 15vh;
+    background-color: #5fcefa;
+}
+
+header > h1 {
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-contacts {
+    margin-top: 2vh;
+    margin-right: 5vw;
+}
+
+.header-contacts p {
+    margin: 0; 
+}
