@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Ecol.BLL.CabelListService.DTO
+namespace Ecol.BLL.CableListService.DTO
 {
     public class CriterionSetting
     {

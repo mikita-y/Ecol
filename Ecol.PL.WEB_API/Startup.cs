@@ -1,5 +1,5 @@
 using Ecol.BLL.AuthenticationService;
-using Ecol.BLL.CabelListService;
+using Ecol.BLL.CableListService;
 using Ecol.DAL.Context;
 using Ecol.DAL.Repository;
 using Ecol.PL.WEB_API.Infrastructure;

@@ -4,13 +4,13 @@ using Ecol.DAL.Entities;
 using System;
 using System.Threading.Tasks;
 
-namespace Ecol.BLL.CabelService
+namespace Ecol.BLL.CableService
 {
-    public class CabelService : ICabelService
+    public class CableService : ICableService
     {
         private readonly EcolDbContext _db;
 
-        public CabelService(EcolDbContext db)
+        public CableService(EcolDbContext db)
         {
             _db = db;
         }

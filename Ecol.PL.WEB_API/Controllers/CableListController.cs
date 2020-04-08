@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Ecol.BLL.CabelListService;
+using Ecol.BLL.CableListService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ecol.PL.WEB_API.Controllers
@@ -17,7 +17,7 @@ namespace Ecol.PL.WEB_API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery] SortingCriterion criterion)
+        public async Task<IActionResult> Get([FromQuery] CableListCriterion criterion)
         {
             var result = await _cabelListService.GetCableListAsync(criterion);
 

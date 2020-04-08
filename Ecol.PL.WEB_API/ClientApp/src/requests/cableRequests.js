@@ -77,12 +77,14 @@ export function getListRequest(setList, criterion) {
         let request = "api/cablelist";
 
         if(criterion) {
-            (criterion.marking || criterion.performance || criterion.pairsNumber || criterion.twist) && (request += "?")
+            request += "?"
 
             criterion.marking && (request += `marking=${criterion.marking}`);
             criterion.performance && (request += `&performance=${criterion.performance}`);
             criterion.pairsNumber && (request += `&pairsNumber=${criterion.pairsNumber}`);
             criterion.twist && (request += `&twist=${criterion.twist}`);
+            criterion.pageNumber && (request += `&pageNumber=${criterion.pageNumber}`);
+            criterion.pageSize && (request += `&pageSize=${criterion.pageSize}`);
         }
 
         axios

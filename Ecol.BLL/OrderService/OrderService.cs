@@ -1,4 +1,4 @@
-﻿using Ecol.BLL.Common;
+﻿using Ecol.BLL.Pagination;
 using Ecol.BLL.Result;
 using Ecol.DAL.Context;
 using Ecol.DAL.Entities;

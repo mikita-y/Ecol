@@ -1,5 +1,9 @@
 .errorView {
     position: fixed;
+    margin:auto;
+    left:0;
+    right:0;
+    width: 50%;
     z-index: 17;
     border: 1px solid gray;
     border-radius: 10px;

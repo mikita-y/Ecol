@@ -5,21 +5,32 @@ import * as requests from '../../../requests/cableRequests'
 import * as basketActions from '../../../store/basketReducer'
 import CabelList from './CableList/CableList'
 import FilterPanel from './FilterPanel/FilterPanel'
+import PaginationPanel from '../Common/PaginationPanel/PaginationPanel'
 import './Price.css'
 
 function Price({ getListRequest, addCableToBasket, deleteCableFromBasket, basket }) {
 
     const [cableListState, setCableListState] = useState({
         cableList: [],
-        criterionSetting: null
+        criterionSetting: null,
+        pageSetting: {
+            currentPage: 0,
+            pageCount: 1
+        }
     });
 
+    const [criterion, setCriterion] = useState({
+        pageSize: 5
+     });
+
     useEffect(() => {
-        getListRequest(setCableListState);
+        getListRequest(setCableListState, criterion);
     }, [])
 
-    const criterionUpdate = (criterion) => {
-        getListRequest(setCableListState, criterion);
+    const criterionUpdate = (filterCriterion) => {
+        const newCriterion = { ...criterion, ...filterCriterion };
+        setCriterion(newCriterion);
+        getListRequest(setCableListState, newCriterion);
     }
 
     return (
@@ -35,6 +46,10 @@ function Price({ getListRequest, addCableToBasket, deleteCableFromBasket, basket
                 addCableToBasket={addCableToBasket}
                 deleteCableFromBasket={deleteCableFromBasket}
                 basket={basket}
+            />
+            <PaginationPanel 
+                pageSetting={cableListState.pageSetting}
+                changeCurrentPage={(pageNumber) => getListRequest(setCableListState, {...criterion, pageNumber})}
             />
         </div>
     );

@@ -1,8 +1,8 @@
 ﻿using Ecol.DAL.Entities;
 
-namespace Ecol.BLL.CabelListService
+namespace Ecol.BLL.CableListService
 {
-    public class SortingCriterion
+    public class CableListCriterion
     {
         public string Marking { get; set; }
         public string AdditionalMarking { get; set; }
@@ -10,5 +10,7 @@ namespace Ecol.BLL.CabelListService
         public Twist? Twist { get; set; }
         public int? PairsNumber { get; set; }
         public double? Section { get; set; }
+        public int PageNumber { get; set; }
+        public int PageSize { get; set; }
     }
 }

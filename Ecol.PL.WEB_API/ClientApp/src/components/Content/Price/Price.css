@@ -1,5 +1,7 @@
 .price {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .price h4 {

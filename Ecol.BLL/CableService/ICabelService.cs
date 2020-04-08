@@ -2,9 +2,9 @@
 using Ecol.DAL.Entities;
 using System.Threading.Tasks;
 
-namespace Ecol.BLL.CabelService
+namespace Ecol.BLL.CableService
 {
-    public interface ICabelService
+    public interface ICableService
     {
         Task<Cable> GetCabelByIdAsync(int id);
         Task<OperationDetails> CreateCabelAsync(Cable cabel);

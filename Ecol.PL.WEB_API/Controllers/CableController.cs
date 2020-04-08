@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Ecol.BLL.CabelListService;
+using Ecol.BLL.CableListService;
 using Ecol.DAL.Entities;
 using Ecol.DAL.Repository;
 using Microsoft.AspNetCore.Authorization;
@@ -24,7 +24,7 @@ namespace Ecol.PL.WEB_API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var result = await _cabelListService.GetCableListAsync(new SortingCriterion());
+            var result = await _cabelListService.GetCableListAsync(new CableListCriterion());
 
             return Ok(result);
         }

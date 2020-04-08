@@ -1,6 +1,8 @@
 .cableList {
     width: 90%;
+    flex-grow: 1;
     margin: auto;
+    margin-top: 1vh;
 }
 
 .cableList td, .priceList th {
